@@ -2,19 +2,17 @@
 
 ![Prompt Perfecter](assets/prompt-perfecter-banner-16-9.png)
 
-**Do you believe that *better prompts* unlock *better results* from your AI assistants? We do.** 🚀
-
-If you're tired of okay-ish LLM responses and wish you could magically turn your vague ideas into laser-focused prompts, **your wish is granted!** 🧞‍♂️
+**Tired of okay-ish LLM responses? Wish you could magically turn your vague ideas into laser-focused prompts? Your wish is granted!** 🧞‍♂️
 
 Prompt Perfecter is a Chrome Extension designed to be your personal AI whisperer. It seamlessly integrates with your favorite LLMs (ChatGPT, Claude, Gemini, Grok) and uses the power of Google's Gemini API to refine and enhance your prompts *before* you even send them.
 
-**Think of it as a turbocharger for your thoughts, ensuring every interaction starts with the best possible instruction!**
+**Think of it as a turbocharger for your thoughts! 🚀**
 
 ---
 
 ## 😵 The Problem: Prompt Purgatory
 
-We've all been there. You *know* the quality of the answer depends heavily on the quality of the question, but translating a brilliant idea into a prompt an LLM truly understands can feel like wrestling a digital octopus. The results? Often generic, slightly off-topic, or just plain... *meh*. You waste time re-writing, re-phrasing, and hoping for the best.
+We've all been there. You have a brilliant idea, but translating it into a prompt that an LLM truly understands can feel like wrestling a digital octopus. The results? Often generic, slightly off-topic, or just plain... *meh*. You waste time re-writing, re-phrasing, and hoping for the best.
 
 ## 💡 The Solution: Your AI Co-Pilot
 
