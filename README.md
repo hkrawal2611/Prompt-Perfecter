@@ -25,7 +25,7 @@ Prompt Perfecter injects a simple **"✨ Perfecter"** button right into the LLM 
 5.  **Send to LLM:** Watch as the LLM delivers significantly better, more relevant, and insightful responses!
 
 <p align="center">
-  <img src="assets/prompt-perfecter-recording-2x-gif.gif" alt="Prompt Perfecter Demo" width="600"/>
+  <img src="assets/prompt-perfecter-recording-2x-gif.gif" alt="Prompt Perfecter Demo" width="800"/>
 </p>
 <p align="center"><em>🛠️ Prompt Perfecter in action – enhancing prompts for better AI responses.</em></p>
 
