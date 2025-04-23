@@ -427,8 +427,8 @@ function showFloatingPopup(message, type = 'info', enhancedText = null, inputEle
     } else if (type === 'success' && enhancedText) {
       content.innerHTML = `
         <div style="margin-bottom: 15px; color: ${colors.text};">✨ <strong>Enhanced Prompt:</strong></div>
-        <div style="background: ${colors.codeBackground}; padding: 15px; border-radius: 6px; white-space: pre-wrap; margin-bottom: 15px; color: ${colors.text};">
-          ${enhancedText}
+        <div style="background: ${colors.codeBackground}; padding: 8px; border-radius: 6px; white-space: pre-wrap; margin-bottom: 15px; color: ${colors.text}; text-align: start;">
+${enhancedText}
         </div>
       `;
       
