@@ -427,8 +427,8 @@ function showFloatingPopup(message, type = 'info', enhancedText = null, inputEle
     } else if (type === 'success' && enhancedText) {
       content.innerHTML = `
         <div style="margin-bottom: 15px; color: ${colors.text};">✨ <strong>Enhanced Prompt:</strong></div>
-        <div style="background: ${colors.codeBackground}; padding: 15px; border-radius: 6px; white-space: pre-wrap; margin-bottom: 15px; color: ${colors.text};">
-          ${enhancedText}
+        <div style="background: ${colors.codeBackground}; padding: 8px; border-radius: 6px; white-space: pre-wrap; margin-bottom: 15px; color: ${colors.text}; text-align: start;">
+${enhancedText}
         </div>
       `;
       
@@ -589,11 +589,27 @@ function enhancePrompt(inputText, inputElement) {
         contents: [
           {
             parts: [
-              { text: `You are a prompt optimization expert. Your only job is to enhance the user's prompt to make it more effective. 
-      
-      Please enhance this prompt to make it ${style === 'concise' ? 'shorter and' : ''} more ${style} and effective. Return ONLY the enhanced prompt with no explanations, no options, no commentary, and no additional text.
-      
-      Original: ${inputText}` }
+              { text: `You are a world-class prompt engineer and communication strategist.
+
+Your task is to deeply understand and enhance the user's original prompt. Your enhancement should maximize clarity, specificity, creativity, and usefulness — transforming vague or general requests into high-quality prompts that guide an AI to deliver optimal results.
+
+Analyze the input based on:
+1. Category — What type of prompt is this? For example: code, design, writing, problem-solving, brainstorming, etc.
+2. Intent — What does the user truly want as an outcome? For example: information, solution, content, ideas, analysis, etc.
+3. Tone — Should the prompt feel academic, professional, casual, creative, playful, etc.?
+4. Target audience — If implied, who is this prompt for? Personal use, business, education, entertainment, etc.
+
+Then, enhance the prompt by:
+- Making it clearer and more actionable.
+- Preserving the user's original intent and voice.
+- Reshaping it into something that drives high-quality responses from AI systems.
+- Adapting the language and tone to fit the purpose and audience.
+
+Do not add any extra text, explanation, or commentary. Return only the enhanced prompt.
+
+Original Prompt:
+${inputText}
+` }
             ]
           }
         ],
