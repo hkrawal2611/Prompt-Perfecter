@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt Perfecter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 15px;
+    }
+    h1 {
+      color: #1a73e8;
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    h1 span {
+      margin-right: 8px;
+    }
+    .toggle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .toggle input {
+      margin-right: 10px;
+    }
+    button {
+      width: 100%;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: #0d62cb;
+    }
+    .status {
+      text-align: center;
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .success {
+      background-color: #e6f4ea;
+      color: #137333;
+    }
+    .error {
+      background-color: #fce8e6;
+      color: #d93025;
+    }
+    .settings-hint {
+      font-size: 12px;
+      color: #5f6368;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Prompt Perfecter</h1>
+  
+  <div class="toggle">
+    <input type="checkbox" id="isEnabled">
+    <label for="isEnabled">Enable enhancement</label>
+  </div>
+  
+  <button id="configureBtn">Configure API Key & Settings</button>
+  
+  <div class="settings-hint">
+    Make sure you've configured your Gemini API key in settings before using the extension.
+  </div>
+  
+  <div id="status" class="status"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

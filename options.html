@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt Perfecter Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 600px;
+    }
+    h1 {
+      color: #1a73e8;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .toggle {
+      display: flex;
+      align-items: center;
+    }
+    .toggle input {
+      margin-right: 10px;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #0d62cb;
+    }
+    .status {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .info {
+      background-color: #e8f0fe;
+      color: #1a73e8;
+    }
+    .success {
+      background-color: #e6f4ea;
+      color: #137333;
+    }
+    .error {
+      background-color: #fce8e6;
+      color: #d93025;
+    }
+    .api-instructions {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+    .api-instructions h3 {
+      margin-top: 0;
+    }
+    .api-instructions ol {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Prompt Perfecter Settings</h1>
+  
+  <form id="settingsForm">
+    <div class="form-group toggle">
+      <input type="checkbox" id="isEnabled" name="isEnabled">
+      <label for="isEnabled">Enable Prompt Perfecter</label>
+    </div>
+    
+    <div class="form-group">
+      <label for="apiKey">Gemini API Key:</label>
+      <input type="text" id="apiKey" name="apiKey" placeholder="Enter your Gemini API key">
+    </div>
+    
+    <button type="submit">Save Settings</button>
+  </form>
+  
+  <div id="status" class="status"></div>
+  
+  <div class="api-instructions">
+    <h3>How to Get a Gemini API Key:</h3>
+    <ol>
+      <li>Go to <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a></li>
+      <li>Sign in with your Google account</li>
+      <li>Click "Create API key"</li>
+      <li>Create a new API key or select an existing one</li>
+      <li>Copy the API key and paste it above</li>
+    </ol>
+    <p><strong>Note:</strong> Keep your API key secure. Your key is stored locally in your browser and is only used to interact with the Gemini API.</p>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
