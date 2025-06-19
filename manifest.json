@@ -1,0 +1,59 @@
+{
+    "manifest_version": 3,
+    "name": "Prompt Perfecter",
+    "version": "1.0.0",
+    "description": "Enhance your prompts for AI platforms like ChatGPT, Claude, and Gemini",
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [{
+      "resources": ["assets/your-icon.png"],
+      "matches": ["<all_urls>"]
+    }],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "commands": {
+      "trigger-refinement": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+E",
+          "mac": "MacCtrl+Shift+E"
+        },
+        "description": "Refine the text in the active input field"
+      }
+    },
+    "options_page": "options.html",
+    "permissions": [
+      "storage"
+    ],
+    "host_permissions": [
+      "https://chat.openai.com/*",
+      "https://chatgpt.com/*",
+      "https://claude.ai/*",
+      "https://gemini.google.com/*",
+      "https://grok.x.ai/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://chat.openai.com/*",
+          "https://chatgpt.com/*",
+          "https://claude.ai/*",
+          "https://gemini.google.com/*",
+          "https://grok.x.ai/*"
+        ],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
